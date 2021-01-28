@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h4>Login</h4>
+        <form action="./home.html">
+            <div class="form-group">
+
+              <input type="text" class="form-control" placeholder="Email or username" id="username" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Enter password" id="pwd" required>
+            </div>
+            <div class="form-group form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox"> Remember me
+              </label>
+            </div>
+            <button id="login" type="submit" class="btn btn-primary">Login</button>
+          </form>
+          
+          <p>Don't have an account?</p>
+          <button id="shuush" type="submit" class="btn btn-sm btn-primary signup">Sign up</button>
+          
+
+    </div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+      <script type="text/javascript">
+        document.getElementById("shuush").onclick = function () {
+            location.href = "./signup.html";
+        };
+  
+    </script>
+
+</body>
+</html>
